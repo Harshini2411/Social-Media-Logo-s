@@ -1,0 +1,37 @@
+*
+{
+background-color: rgb(12, 12, 12);
+}
+
+
+div{
+height: 300px;
+width:300px;
+margin: 50px auto;
+border-top:80px solid #f51a06 ;
+border-bottom:80px solid #22a144;
+border-left:80px solid #fbbc05 ;
+border-right:80px solid #0362fa ;
+border-radius:50% ;
+position: relative;
+}
+div:before{
+content:" ";
+position: absolute;
+top: 50%;
+right:-55px;
+transform: translateY(-50%);
+width: 200px;
+height:100px;
+background: #0362fa;
+}
+div:after{
+content:" ";
+position: absolute;
+top: -100px;
+right: -145px;
+width: 0;
+height:0;
+border-top: 200px solid rgb(12, 12, 12);
+border-right: 200px solid rgb(12, 12, 12);
+}
